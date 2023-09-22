@@ -1,0 +1,26 @@
+button.EnSavoirPlus {
+	border-radius: 50px;
+	outline: none;
+	border: none;
+	background: #4059ad;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	cursor: pointer;
+}
+
+button.closePopup {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	outline: none;
+	padding: 5px;
+	color: #ffa630;
+	border: none;
+	background: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+.mapboxgl-popup-content {
+	padding: 25px 20px 25px;
+}

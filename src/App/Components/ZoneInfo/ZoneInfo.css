@@ -1,0 +1,152 @@
+.zoneInfo {
+	position: absolute;
+	z-index: 3;
+	display: flex;
+	background: white;
+	height: 100vh;
+	opacity: 0;
+	transform: translateX(100%);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	width: 40%;
+	right: 0;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+button.close {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background-color: #ffa630;
+	outline: none;
+	border: none;
+	border-radius: 100%;
+	padding: 10px;
+	width: 35px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+.container {
+	padding: 70px 20px 20px;
+	width: 100%;
+	overflow: auto;
+}
+/* Gestion d'ouverture / fermeture de la ZoneInfo */
+
+.zoneInfo-enter-active {
+	opacity: 1;
+	transform: translateX(0);
+	display: flex;
+}
+.containerContentWeatherDay {
+	display: flex;
+	margin-top: 1em;
+}
+.faLocationDotWeather {
+	color: #36453b;
+}
+.contentWeatherDay {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1em;
+}
+.contentWeatherDay > p {
+	margin: 0;
+}
+.containerContentWeatherDays {
+	display: flex;
+	background: white;
+	border-radius: 6px;
+	width: 100%;
+	overflow: auto;
+}
+.containerContentWeatherDays > div {
+	margin-right: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 100px;
+}
+.fa-calendar {
+	color: #4059ad;
+}
+.weatherDay,
+.transport,
+.accomodation {
+	background: #f5f9e9;
+	border-radius: 3px;
+	padding: 1.8em;
+	margin-top: 1.8em;
+}
+
+p.dateWeather {
+	background: linear-gradient(to top, rgb(122 117 253 / 40%) 0%, rgb(122 117 253 / 40%) 4px, transparent 5px) no-repeat;
+	background-size: 100%;
+	transition: background-size 0.3s;
+}
+.meteoOtherDays {
+	background: #f5f9e9;
+	border-radius: 3px;
+	margin-top: 0.8em;
+}
+summary::marker {
+	content: none;
+}
+summary {
+	font-weight: bold;
+	position: relative;
+	padding: 10px 40px 10px 0;
+	cursor: pointer;
+}
+.siteWebFestival {
+	border-radius: 50px;
+	outline: none;
+	border: none;
+	background: #4059ad;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	margin: 2em 0;
+}
+.containerSiteWebFestival {
+	margin: 1.5em 0;
+}
+.fa-angle-down {
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #ffa630;
+	font-size: 20px;
+	padding: 13px;
+	cursor: pointer;
+	display: table-cell !important;
+	vertical-align: middle !important;
+	transition-property: -ms-transform, -webkit-transform, transform !important;
+	transition-duration: 250ms !important;
+	transition-timing-function: ease-in-out !important;
+	rotate: -90deg;
+}
+details.meteoOtherDays[open] .fa-angle-down {
+	-ms-transform: rotate(90deg) !important;
+	-webkit-transform: rotate(90deg) !important;
+	transform: rotate(90deg) !important;
+}
+.googleMaps {
+	color: #4059ad;
+	text-decoration: none;
+	background: linear-gradient(to top, rgb(122 117 253 / 40%) 0%, rgb(122 117 253 / 40%) 4px, transparent 5px) no-repeat;
+	background-size: 0 100%;
+	transition: background-size 0.3s;
+}
+.googleMaps:hover {
+	background-size: 100% 100%;
+}
+@media screen and (max-width: 800px) {
+	.zoneInfo {
+		width: 100%;
+		height: 100vh;
+		bottom: 0;
+	}
+}

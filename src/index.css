@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+body {
+	margin: 0;
+	font-family: "Lato", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h2,
+h3 {
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	margin: 0;
+	color: #36453b;
+}
+
+h1 {
+	color: #ffa630;
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	margin: 0;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}

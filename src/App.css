@@ -1,0 +1,46 @@
+.App {
+	text-align: center;
+}
+
+body {
+	overflow: hidden;
+	background-color: white;
+}
+input:focus {
+	outline: none;
+}
+
+.App-header {
+	width: 100%;
+}
+.map-container {
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+	position: absolute;
+}
+.logo {
+	color: #4059ad;
+}
+
+.faLocationDot {
+	width: 30px;
+	height: 30px;
+	color: #4059ad;
+	cursor: pointer;
+}
+
+.faLocationDot.active {
+	color: #ffa630;
+}
+.mapboxgl-popup-close-button {
+	display: none;
+}
+
+.mapboxgl-popup-content {
+	background-color: white !important;
+}
+
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+	border-bottom-color: white !important;
+}
