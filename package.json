@@ -3,6 +3,8 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+		"@babel/plugin-transform-private-property-in-object": "^7.22.11",
 		"@fortawesome/fontawesome-svg-core": "^6.4.2",
 		"@fortawesome/free-brands-svg-icons": "^6.4.2",
 		"@fortawesome/free-solid-svg-icons": "^6.4.2",
